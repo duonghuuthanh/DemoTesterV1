@@ -19,10 +19,18 @@ public class Question {
         id = UUID.randomUUID().toString();
     }
 
-    public Question(String name, int categoryId) {
-        this.content = name;
+    public Question(String content, int categoryId) {
+        this.content = content;
         this.categoryId = categoryId;
     }
+
+    public Question(String id, String content, int categoryId) {
+        this.id = id;
+        this.content = content;
+        this.categoryId = categoryId;
+    }
+    
+    
 
     public Question() {
     }
